@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="290dp"
+        android:layout_height="180dp"
+        app:strokeColor="@color/pureWhite"
+        app:strokeWidth="2dp"
+        app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_team_a"
+                style="@style/horizontal_recycler_icon_attr"
+                android:src="@drawable/vector_team_a_ic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_team_b"
+                style="@style/horizontal_recycler_icon_attr"
+                android:src="@drawable/vector_team_b_ic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_team_a" />
+
+            <TextView
+                android:id="@+id/live_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#dff3e7"
+                android:padding="5dp"
+                android:text="@string/live"
+                android:textColor="#33a865"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_team_b" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:background="#f5f5f5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/live_tv">
+
+                <Button
+                    android:id="@+id/scheduleBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:text="@string/schedule"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/pointsTableBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/scheduleBtn"
+                    android:background="@android:color/transparent"
+                    android:text="@string/points_table"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_teamA"
+                style="@style/horizontal_recycler_text_attr"
+                android:text="@string/teamA"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_team_a"
+                app:layout_constraintLeft_toRightOf="@id/liveGuideLine"
+                app:layout_constraintTop_toTopOf="@id/iv_team_a" />
+
+            <TextView
+                android:id="@+id/tv_teamB"
+                style="@style/horizontal_recycler_text_attr"
+                android:text="@string/teamB"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_team_b"
+                app:layout_constraintLeft_toRightOf="@id/liveGuideLine"
+                app:layout_constraintTop_toTopOf="@id/iv_team_b" />
+
+            <ImageView
+                android:id="@+id/notification_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/vector_notification_ic"
+                app:layout_constraintBottom_toBottomOf="@id/iv_team_a"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_team_a" />
+
+            <TextView
+                style="@style/horizontal_recycler_score_attr"
+                android:text="@string/_111_6_10_ov"
+                app:layout_constraintBottom_toBottomOf="@id/iv_team_a"
+                app:layout_constraintRight_toLeftOf="@id/notificationGuideLine"
+                app:layout_constraintTop_toTopOf="@id/iv_team_a" />
+
+            <TextView
+                style="@style/horizontal_recycler_score_attr"
+                android:text="@string/_56_3_5_4_ov"
+                app:layout_constraintBottom_toBottomOf="@id/iv_team_b"
+                app:layout_constraintRight_toLeftOf="@id/notificationGuideLine"
+                app:layout_constraintTop_toTopOf="@id/iv_team_b" />
+
+            <TextView
+                style="@style/horizontal_recycler_score_attr"
+                android:textColor="#4893c5"
+                android:text="@string/something"
+                app:layout_constraintBottom_toBottomOf="@id/live_tv"
+                app:layout_constraintLeft_toRightOf="@id/liveGuideLine"
+                app:layout_constraintRight_toLeftOf="@id/notification_iv"
+                app:layout_constraintTop_toTopOf="@id/live_tv" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/liveGuideLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/notificationGuideLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.86"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cccccc"
+                app:layout_constraintBottom_toTopOf="@id/relativeLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11:52"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:layout_below="@id/iv_thumbnail"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="8dp"/>
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_below="@id/iv_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/video_title"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector_bookmark"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:layout_below="@id/titleLayout"
+        android:textColor="#363636"
+        android:text="@string/titmeText"/>
+
+</RelativeLayout>

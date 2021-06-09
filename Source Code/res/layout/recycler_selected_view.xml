@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imageVIew"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/dummy_image"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:paddingStart="@dimen/space10dp"
+        android:paddingEnd="@dimen/space10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verticalRV_title"
+        android:layout_below="@id/imageVIew"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="@dimen/textSize24sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/vector_select_ic"
+        android:drawablePadding="@dimen/space8dp"
+        android:paddingStart="@dimen/space8dp"
+        android:paddingEnd="@dimen/space8dp"
+        android:layout_marginTop="@dimen/space8dp"
+        android:paddingTop="@dimen/space4dp"
+        android:paddingBottom="@dimen/space4dp"
+        android:layout_below="@id/titleTv"
+        android:text="@string/recycler_selectedItem"
+        android:textSize="@dimen/textSize18sp"
+        android:background="@color/offWhite"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/space16dp"
+        android:scaleX="-1"
+        app:srcCompat="@drawable/vector_replly_ic"/>
+</RelativeLayout>

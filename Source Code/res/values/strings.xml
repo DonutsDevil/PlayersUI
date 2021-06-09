@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Interview UI</string>
+    <string name="search">Search</string>
+    <string name="smile">Smile</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all">ALL</string>
+    <string name="ipl">IPL</string>
+    <string name="cricket">CRICKET</string>
+    <string name="football">FOOTBALL</string>
+    <string name="thumbnail_image">Thumbnail Image</string>
+    <string name="balls_remaining">Vienna Arena has 26 remaining balls</string>
+    <string name="verticalRV_title">IPL 2015 : 5 Players to watch out for as PBKS take on KKR</string>
+    <string name="teamB">VID</string>
+    <string name="teamA">SAL</string>
+    <string name="recycler_selectedItem">Husain karachiwala | 4 Minutes Ago | Top 5/ Top 10</string>
+    <string name="video_title">IPL 2021: Top 5 Performance of the week #ABDevillers</string>
+    <string name="titmeText">3 hours ago</string>
+    <string name="live">LIVE</string>
+    <string name="schedule">SCHEDULE</string>
+    <string name="points_table">Points Table</string>
+    <string name="_111_6_10_ov">111/6 (10 ov)</string>
+    <string name="_56_3_5_4_ov">*56/3 (5.4 ov)</string>
+    <string name="something">Something</string>
+</resources>

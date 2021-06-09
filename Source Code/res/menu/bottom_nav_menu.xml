@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/vector_home_ic"
+        android:title="HOME"/>
+    <item
+        android:id="@+id/menu_video"
+        android:icon="@drawable/vector_video_ic"
+        android:title="VIDEOS"/>
+    <item
+        android:id="@+id/menu_score"
+        android:icon="@drawable/vector_score_ic"
+        android:title="SCORES"/>
+    <item
+        android:id="@+id/menu_star"
+        android:icon="@drawable/vector_star_ic"
+        android:title="STARS"/>
+</menu>
